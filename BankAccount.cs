@@ -9,7 +9,7 @@ namespace BankEncapsulation
     public class BankAccount
     {
         private double balance = 0;
-        public double Deposit(int d)
+        public double Deposit(double d)
         {
             balance = balance + d;
             return balance;
@@ -18,6 +18,13 @@ namespace BankEncapsulation
         public double getBalance()
         {
             return balance;
+        }
+
+        public double Withdraw(double w)
+        {
+            balance = balance - w;
+            return balance;
+
         }
     }
 }
